@@ -78,21 +78,21 @@
   <body>
     <form action="process_math.php" method="post">
       <label for="num1">
-        Number 1: <input type="text" name="num1" id="num1" />
+        Number 1: <input type="number" name="num1" id="num1" />
       </label>
       <label for="operation">
         Operator
         <select name="operation" id="operation">
-          <option value="add">+</option>
-          <option value="subtract">-</option>
-          <option value="multiply">*</option>
-          <option value="divide">/</option>
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
         </select>
       </label>
       <label for="num2">
-        Number 2: <input type="text" name="num2" id="num2" />
+        Number 2: <input type="number" name="num2" id="num2" />
       </label>
-      <input type="submit" value="Add" />
+      <button type="submit">Calculate</button>
     </form>
   </body>
 </html>
