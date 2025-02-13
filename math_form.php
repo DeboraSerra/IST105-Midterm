@@ -77,6 +77,10 @@
   </head>
   <body>
     <form action="process_math.php" method="post">
+      <?php
+        $hostname = gethostname();
+        echo "<h1>Server: $hostname</h1>";
+      ?>
       <label for="num1">
         Number 1: <input type="number" name="num1" id="num1" />
       </label>
